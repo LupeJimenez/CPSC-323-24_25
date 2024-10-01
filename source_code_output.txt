@@ -1,8 +1,12 @@
-Token: IDENTIFIER, Lexeme: while
-Token: SEPARATOR, Lexeme: (
-Token: IDENTIFIER, Lexeme: fahr
-Token: OPERATOR, Lexeme: <=
-Token: IDENTIFIER, Lexeme: upper
-Token: IDENTIFIER, Lexeme: a
-Token: OPERATOR, Lexeme: =
-Token: REAL, Lexeme: 23.00
+Token        Lexeme
+-------------------------
+keyword    while
+separator  (
+identifier fahr
+operator   <=
+identifier upper
+separator  )
+identifier a
+operator   =
+real       23.00
+separator  ;
