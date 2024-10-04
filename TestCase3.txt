@@ -1,0 +1,48 @@
+Function temperatureConverter {
+    Real fahrenheit, celsius, kelvin;
+    
+    // Get Fahrenheit input from the user
+    Get(fahrenheit);
+    
+    // Convert Fahrenheit to Celsius
+    celsius = (fahrenheit - 32) * 5 / 9;
+    
+    // Convert Celsius to Kelvin
+    kelvin = celsius + 273.15;
+    
+    // Output the Celsius and Kelvin temperatures
+    Put("Celsius: ");
+    Put(celsius);
+    Put("Kelvin: ");
+    Put(kelvin);
+    
+    // Check if it's below freezing point
+    If (celsius < 0.0) {
+        Put("Below freezing point");
+    } Else {
+        Put("Above freezing point");
+    }
+
+    // Check if it's at boiling point
+    If (celsius >= 100.0) {
+        Put("At or above boiling point");
+    } Else {
+        Put("Below boiling point");
+    }
+    
+    // Additional check for absolute zero (impossible in real conditions)
+    If (kelvin <= 0.0) {
+        Put("Error: Below absolute zero");
+    }
+
+    // Output temperature categories
+    If (celsius > 30.0) {
+        Put("Hot weather");
+    } ElseIf (celsius <= 30.0 && celsius > 15.0) {
+        Put("Warm weather");
+    } Else {
+        Put("Cold weather");
+    }
+
+    Return;
+}

@@ -1,0 +1,12 @@
+Function testFunc {
+    Integer a;
+    Real b;
+    a = 5;
+    b = a + 3.14;
+    If (a > 3) {
+        Put(b);
+    } Else {
+        a = 10;
+    }
+    Return;
+}

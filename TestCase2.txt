@@ -1,0 +1,25 @@
+Function primeChecker {
+    Integer num, i;
+    Boolean isPrime;
+    Get(num);
+    isPrime = True;
+    
+    If (num <= 1) {
+        isPrime = False;
+    } Else {
+        i = 2;
+        While (i < num && isPrime == True) {
+            If (num % i == 0) {
+                isPrime = False;
+            }
+            i = i + 1;
+        }
+    }
+    
+    If (isPrime == True) {
+        Put("Prime");
+    } Else {
+        Put("Not Prime");
+    }
+    Return;
+}
